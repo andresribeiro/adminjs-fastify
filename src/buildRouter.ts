@@ -35,7 +35,7 @@ export const buildRouter = async (
     throw new WrongArgumentError(INVALID_ADMIN_JS_INSTANCE);
   }
 
-  await fastifyApp.register(fastifyMultipart, { attachFieldsToBody: true });
+  // await fastifyApp.register(fastifyMultipart, { attachFieldsToBody: true });
 
   admin.initialize().then(() => {
     log.debug('AdminJS: bundle ready');
